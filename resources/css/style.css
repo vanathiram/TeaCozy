@@ -1,25 +1,29 @@
 body{
-  color:seashell;
   font-family: helvetica;
   font-size: 22px;
-  opacity: 0.9;
+  color:seashell;
   background-color: black;
+  opacity:0.9;
+  text-align: center;
 }
+
 .header
 {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   border-bottom:1px solid seashell;
+  background-color: black;
   height:69px;
   width: 100%;
   position: fixed;
-  background-color: black;
+  margin:-8px;
+  z-index: 1;
 }
+
 .header img
 {
-  padding: 10px 10px 9px 10px;
-  width:auto;
-  height:50px;
+  padding-left:10px;
 }
 
 nav
@@ -27,16 +31,17 @@ nav
   display:flex;
   align-items:center;
   justify-content: flex-end;
-  width:1152px;
-  height:69px;
+  width: 100%;
 }
 
-nav span{
+nav span
+{
   display: inline-block;
   padding:20px 10px;
 }
 
-a{
+a
+{
   color: seashell;
 }
 
@@ -44,13 +49,14 @@ a{
 {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 69px;
+  padding-top: 64px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
-.missioncon
+.missioncontainer
 {
   display: flex;
   justify-content: center;
@@ -60,7 +66,13 @@ a{
   height:700px;
   background-image: url("../../resources/images/img-mission-background.jpg");
 }
-.textcon1
+
+.missioncontainer h2
+{
+  padding-top: 10px;
+}
+
+.text1
 {
   display: flex;
   justify-content: center;
@@ -69,16 +81,22 @@ a{
   background-color: black;
   width: 100%;
 }
-.featuredteacon
+
+.featuredteacontainer
 {
   display: flex;
   width:1000px;
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  margin: 70px 0 ;
+  margin-bottom: 50px;
 }
-.textcon2
+
+.featuredteacontainer h2{
+  padding-top: 69px;
+}
+
+.text2
 {
   display:flex;
   width: 1000px;
@@ -93,25 +111,27 @@ a{
   justify-content:space-between;
   width:1000px;
 }
+
 .box2
 {
   display:flex;
   justify-content: center;
   width:1000px;
 }
+
 .type1,.type2,.type3,.type4,.type5
 {
   display: flex;
   flex-direction: column;
-  text-align:center;
   justify-content:flex-start;
   align-items: center;
-
 }
+
 .type4
 {
   margin: 0 25px 0 0;
 }
+
 .type5
 {
   margin:0 0 0 25px;
@@ -120,24 +140,27 @@ a{
 span{
   padding:10px;
 }
-.locationcon
+
+.locationcontainer
 {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 550px;
-  justify-content:flex-start;
+  height: 500px;
   align-items: center;
   background-image: url("../../resources/images/img-locations-background.jpg");
+  background-position:top;
+  background-size:auto;
 }
-.textcon3
+
+.locationcontainer h2
 {
   display: flex;
-  margin: 20px 0 15px;
-
+  margin-top: 80px;
+  padding-bottom: 15px;
 }
 
-.addresscon
+.addresscontainer
 {
   display:flex;
   width:1200px;
@@ -145,10 +168,10 @@ span{
   align-items:flex-start;
   flex-direction: row;
 }
-.address{
-  text-align: center;
+
+.address
+{
   width: 300px;
-  height: 300px;
   background-color: black;
   opacity:1;
   margin:0 20px;
@@ -159,20 +182,20 @@ span{
   padding-top: 20px;
 }
 
-.textcon3 h2
+h2, h5
 {
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.contactcon
+.contactcontainer
 {
   display: flex;
-  text-align: center;
+  justify-content:space-around;
   flex-direction: column;
   height:200px;
   width:100%;
-  margin-bottom: 40px;
 }
+
  .footer
  {
    display: flex;
